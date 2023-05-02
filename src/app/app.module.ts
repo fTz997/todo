@@ -13,13 +13,19 @@ import { ReadAllComponent } from './components/read-all/read-all.component';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button"
 import { MatIconModule} from "@angular/material/icon"
+import { MatBadgeModule} from '@angular/material/badge'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FinalizadosComponent } from './components/finalizados/finalizados.component';
+import { CreateComponent } from './components/create/create.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ReadAllComponent
+    ReadAllComponent,
+    FinalizadosComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,9 @@ import { MatIconModule} from "@angular/material/icon"
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatBadgeModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
